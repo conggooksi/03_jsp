@@ -1,0 +1,10 @@
+WebContent
+  ch07_template 폴더
+    top.jsp
+	bottom.jsp
+	left.jsp
+
+	newItem.jsp
+	bestItem.jsp
+
+	template.jsp   <== 실행  

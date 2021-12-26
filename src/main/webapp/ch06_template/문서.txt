@@ -1,0 +1,15 @@
+WebContent
+  ch06_template 폴더
+    top.jsp
+    bottom.jsp
+    
+    dc.jsp
+    dcleft.jsp
+    
+    pmp.jsp
+    pmpleft.jsp
+    
+    pageController.jsp
+    template.jsp
+    
+    main.jsp <== 실행

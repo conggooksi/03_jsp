@@ -1,0 +1,114 @@
+<Beans:빈즈> <-- 자바빈즈 : 자바에서 작성된 컴포넌트들을 일컫는 말, 줄여서 빈
+자바빈즈 : 클래스
+컴포넌트 : 자바빈즈, Button, TextField, Label <--컴포넌트는 프로그램하는 도구들
+
+자바빈즈는 자바를 소프트웨어 컴포넌트(부품)만들기 위한 기술이다
+
+자바빈즈를 사용하는 이유 : 디자인 부분과 로직부분을 분리하여 작업할 수 있다
+프로그램 작성의 효율을 높이기 위해 자바빈즈를 만들어 사용한다
+
+장점 : 재활용(Button,,,,)
+
+일반적으로 웹 사이트는 디자이너와 프로그래머가 협력하여 개발하게 된다
+그런데 프로그래머가 JSP페이지의 이곳 저곳에 자바코드를 입력했을 때
+디자이너는 이 페이지를 해석하기 어려워지게 되고
+개발 효율 또한 매우 떨어지게 된다
+
+그래서 자바빈즈 등장하게 된 것이다
+
+자바빈은 JSP페이지의 디자인 부분과 로직부분을 나눔으로써
+복잡한 코드를 줄이고 프로그램 개발의 효율을 높일 수 있다
+
+<<빈 작성 규칙>>
+1. 멤버변수는 private로 선언해야 한다
+  private String id;
+  private String name;
+  
+2. 멤버 변수값 설정은 setXxx()메서드로 하고
+   값을 얻을 때는 getXxx()메서드를 이용하면 된다 <--private님깐 메서드로 처리해서 활용
+   
+public void setName(String name){
+  this.name=name;
+}
+
+public String getName(){
+  return name
+}
+
+3. 메서드 접근 제한자는 public으로 한다
+4. 메서드 이름은 setXxx(), getXxx()로 한다(변수 이름으로 메서드를 만든다)
+5. 멤버변수가 boolean형일 경우 getXxx()대신 isXxx()로 한다
+
+6. 기타 필요한 멤버변수, 멤버 메서드를 사용할 수도 있다
+
+<<빈 만들기 예시>>
+package~~~
+import~~~
+public class TestDTO{
+  private String name;
+  
+  public void setName(String name){
+    this.name=name;
+  }
+  
+  public String getName(){
+    return name
+  }
+}
+
+======================================================
+★ JSP에서 빈 사용하는 방법
+------------------------------------------------------
+형식 1
+<jsp:useBean id="" class="" scope=""/>
+
+형식 2
+<jsp:useBean id="" class="" scope="">
+  <%--빈에 값을 셋팅할 때--%>
+  <jsp:setProperty name="" property="" value="값"/>
+  <jsp:setProperty name="" property="" value="값"/>
+  
+  <%--빈으로부터 값을 얻어올 때 --%>
+  <jsp:getProperty name="" property=""/>
+  <jsp:getProperty name="" property=""/>
+</jsp:useBean>
+------------------------------------------------------
+id="클래스 변수, 클래스 객체명"
+  Test t=new Test(); <--이거랑 같은거
+class="패키지.클래스이름"
+
+scope="범위지정"
+scope="page" 디폴트 <-- 현재 page에만 적용
+scope="session" <-- 유저가 들어와서 뭔가를 할 떄
+scope="request"
+scope="application"
+
+<jsp:setProperty name="id명" property="빈 변수" value="값"/>
+<jsp:getProperty name="id명" property="빈 변수"/>
+------------------------------------------------------
+
+======================================================
+■ 빈(DTO)에 값을 셋팅하는 방법 4가지
+------------------------------------------------------
+1. <jsp:setProperty name="id명" property="프로퍼티명" value="값"/> <==프로퍼티명이 빈의 변수명
+2. <jsp:setProperty name="id명" property="프로퍼티명" param="파라미터명"/>
+													HTML의 파라미터명
+3. <jsp:setProperty name="id명" property="프로퍼티명"/> 
+   param="파라미터명" 생략은 프로퍼티명과 파라미터명이 같을
+
+4. <jsp:setProperty name="id명" property="*"/>
+   property="*" 이렇게 사용하려면 프로퍼티명(빈의 변수명)과 파라미터명(HTML의 변수명)이 모두 같을 떄 *로 사용한다
+======================================================
+실습 1
+  java Resources
+    src/ java파일 넣는 곳
+    src/mybean/TestDTO.java
+    
+  WebContent/ch12_bean/testBean.jsp
+  
+실습 2
+  java Resources/src/mybean/TestDTO2.java
+  
+  WebContent/ch12_bean/testBean2.html
+  WebContent/ch12_bean/testBean2.jsp
+

@@ -1,0 +1,30 @@
+05_application.txt
+application 내장 객체는 서블릿 또는 어플리케이션 외부환경정보(context)를 나타내는 내부객체이다
+
+http://localhost:9001/03_jsp=context/ch02_object/04_response.jsp
+
+
+◆◆◆프로젝트=application=컨텍스트
+
+application 객체는
+javax.servlet.ServletContext 객체 타입으로 제공된다
+ServletContext application; //클래스 변수
+
+
+◆메서드들
+1. String getServeletInfo() : 서버 정보를 구한다
+2. String getMimeType(fileName) : 지정한 파일의 MIME타입을 구한다
+          text/html
+예제 : String contentType=application.getMimeType("aa.html");
+
+3. String getMajorVersion() : JSP버전(정수 부분)
+4. String getMinorVersion() : JSP버전(소수 부분)
+					서버가 지원하는 서블릿 규약의 메이저버전/마이너버전
+
+5. String getRealPath("/"); 지정한 실제 알아내기(이클립스가 보여주는 것은 진짜 realPath 아니다)
+       진짜 실제주소를 알려면 서버에 올려서 getRealPath("/") 명령 실행 확인하면 알 수 있다
+
+6. void log("메시지"); //로그기록, 서버에 올려서 확인하세요
+   (c:\Tomcat8.0\logs에 기록된다)
+                  localhost.2021-12-07.log 메모장으로 끌어다 놓는다
+   실습 05_application.jsp

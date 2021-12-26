@@ -1,0 +1,24 @@
+02_out.txt
+out객체: JspWriter의 객체이다
+
+■ 메서드들
+1. isAutoFlush() : 출력 버퍼가 가득 찼을 때 자동으로 밀어낼 것인지 여부를 지정한다
+     true : 디폴트이다, 자동으로 밀어낸다
+     false
+     
+2. getBufferSize() : 출력 버퍼 전체 size를 구한다(기본 : 8kb)
+3. getRemaining() : 남아 있는 출력 버퍼 size를 구한다
+
+4. clearBuffer() : 출력 버퍼를 비운다
+5. out.println() : String을 출력한다
+
+6. flush() : 출력 버퍼 내용을 밀어낸다
+7. close() : 출력 버퍼 내용을 밀어내고, 출력버퍼를 닫는다
+
+■ 서블릿 ==> JSP // <-- 서블릿이 먼저 나오고 후에 jsp가 나왔다
+
+서블릿은 아래 메서드 중 하나를 사용하면 된다, 꼭 써야 한다 //<--jsp는 자동으로 비우는 기능이 있기 때문에 꼭 안써줘도 된다
+out.close();
+out.flush(); 
+
+실습 : 02_out.jsp

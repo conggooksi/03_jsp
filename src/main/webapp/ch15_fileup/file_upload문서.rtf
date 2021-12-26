@@ -1,0 +1,242 @@
+{\rtf1\ansi\ansicpg949\deff0\nouicompat\deflang1033\deflangfe1042{\fonttbl{\f0\fmodern\fprq2\fcharset129 \'b1\'bc\'b8\'b2;}{\f1\froman\fprq2\fcharset0 Times New Roman;}{\f2\fmodern\fprq2\fcharset129 \'b8\'bc\'c0\'ba \'b0\'ed\'b5\'f1;}{\f3\fmodern\fprq1\fcharset0 Consolas;}}
+{\colortbl ;\red0\green0\blue255;\red0\green112\blue192;\red255\green0\blue0;\red0\green77\blue187;\red0\green0\blue0;\red63\green95\blue191;\red127\green0\blue85;\red106\green62\blue62;\red42\green0\blue255;\red63\green127\blue95;\red0\green128\blue128;\red63\green127\blue127;\red127\green0\blue127;\red191\green95\blue63;}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mnaryLim0\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\nowidctlpar\b\f0\fs36\lang1042\'b8\'c5\'c0\'cf\'ba\'b8\'b3\'bb\'b1\'e2\'bf\'cd \'c6\'c4\'c0\'cf \'be\'f7\'b7\'ce\'b5\'e5 \'c7\'cf\'b7\'c1\'b8\'e9 \par
+\f1\fs20\lang1033\par
+\f0\lang1042 cos.jar\'b8\'a6 \'b4\'d9\'bf\'ee \'b9\'de\'b4\'c2\'b4\'d9 \par
+\par
+{{\field{\*\fldinst{HYPERLINK http://www.servlets.com }}{\fldrslt{http://www.servlets.com\ul0\cf0}}}}\f1\fs20\lang1033\par
+\par
+\f0\lang1042\'be\'c6\'b7\'a1 \'bf\'c0\'b8\'a5\'c2\'ca \par
+Download the package \par
+\par
+\f1\lang1033 cos-26Dec2008.zip \f0\lang1042\'b8\'a6 \f1\lang1033   util \f0\lang1042\'b0\'e6\'b7\'ce\'bf\'a1 \'b4\'d9\'bf\'ee \'b9\'de\'c0\'da\'b1\'b8\'bf\'e4,  \'b1\'d7 \'c0\'da\'b8\'ae\'bf\'a1\'bc\'ad \'be\'d0\'c3\'e0\'c7\'ae\'b0\'ed \par
+\par
+\f1\lang1033 cos-26Dec2008  \f0\lang1042\'c6\'fa\'b4\'f5\'b8\'a6 c:\\\'bf\'a1 \'ba\'b9\'bb\'e7 \'c7\'cf\'c0\'da\'b1\'b8\'bf\'e4\par
+\par
+C:\\cos-26Dec2008\\lib/\cf2 cos.jar\cf3  \cf0\'b8\'a6 \par
+\cf2 jdk\cf0  \'bc\'b3\'c4\'a1\'b0\'e6\'b7\'ce\cf2 /jre/lib/ext/\cf0\'bf\'a1 \'ba\'b9\'bb\'e7\par
+\cf2 tomcat/lib/\cf0\'bf\'a1\'ba\'b9\'bb\'e7\par
+\f1\lang1033\par
+\par
+\cf2\f0\lang1042\'c8\'af\'b0\'e6\'ba\'af\'bc\'f6 \cf0 ( \'b3\'bb \'c4\'c4\'c7\'bb\'c5\'cd =\'bf\'ec\'c3\'f8\'b9\'f6\'c6\'b0=\'bc\'d3\'bc\'ba)\par
+\f2\lang1033 classpath=.;%JAVA_HOME%\\lib\\tools.jar;\cf2 C:\\cos-26Dec2008\\lib\\cos.jar\cf0\par
+\f1\par
+\f0 C:\\Tomcat 7.0\\\cf3 lib\cf0\f1\\\f0   \cf4 el-api.jar \cf0 , \cf4 jsp-api.jar \cf0 , \cf4 servlet-api.jar  \cf0 3\lang1042\'b0\'b3\lang1033  \lang1042\'c6\'c4\'c0\'cf\'c0\'bb\lang1033  \par
+( C:\\Program Files\\Java\\\cf3 jdk\cf0\\\cf3 jre\cf0\\\cf3 lib\cf0\\\cf3 ext \cf0\lang1042\'bf\'a1\lang1033  \lang1042\'ba\'b9\'bb\'e7\lang1033  \lang1042\'c7\'d8\'c1\'d8\'b4\'d9\lang1033  )...\lang1042\'c8\'ae\'c0\'ce \'c7\'cf\'bd\'c3\'bf\'e4\lang1033\par
+\par
+\lang1042\'c0\'cc\'c5\'ac\'b8\'b3\'bd\'ba  \'c0\'e7 \'b1\'b8\'b5\'bf  \'b6\'c7\'b4\'c2 Tomcat \'c0\'e7 \'b1\'b8\'b5\'bf\par
+\par
+===================================================\par
+\fs60   \'c6\'c4\'c0\'cf \'be\'f7\'b7\'ce\'b5\'e5\f1\lang1033\par
+\f0\fs20\lang1042 ===================================================\par
+
+\pard\nowidctlpar\sl276\slmult1\f3\fs22\lang1033 1. MultipartRequest \f0\lang18\'c5\'ac\'b7\'a1\'bd\'ba\f3\lang1033  \f0\lang18\'bb\'e7\'bf\'eb\f1\lang1033\par
+\f3 2. \f0\lang18\'bb\'fd\'bc\'ba\'c0\'da\f3\lang1033  \par
+MultipartRequest(request,\cf5\ul dir\cf0\ulnone (savePath))  \par
+\f0       \f3 ==>  \cf5\ul request\f0\lang18\'bf\'c0\'ba\'ea\'c1\'a7\'c6\'ae\'bf\'cd\cf0\ulnone\f3\lang1033 , \f0\lang18\'bc\'ad\'b9\'f6\'c2\'ca\'bf\'a1\f3\lang1033  \f0\lang18\'c0\'fa\'c0\'e5\'b5\'c9\f3\lang1033  \f0\lang18\'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\f3\lang1033  (C:\\_java\\\cf5\ul aa\cf0\ulnone\f1\\\f3 )\par
+    \par
+MultipartRequest(request , savePath, size, "\cf5\ul\f0 utf-8\cf0\ulnone\f3 ",  new DefaultFileRenamePolicy())\par
+
+\pard\nowidctlpar\f0\fs20\par
+
+\pard\nowidctlpar\sl276\slmult1\fs22         \lang1042\'c3\'b9\'b9\'f8\'c2\'b0\lang1033  \lang1042\'c0\'ce\'bc\'f6\lang1033  : request \lang1042\'bf\'e4\'c3\'bb\lang1033  \lang1042\'b0\'b4\'c3\'bc\f1\lang1033\par
+\f0         \lang1042\'b5\'ce\'b9\'f8\'c2\'b0 \'c0\'ce\'bc\'f6 : \'c0\'fa\'c0\'e5(\'be\'f7\'b7\'ce\'b5\'e5)\'c7\'d2 \'b0\'e6\'b7\'ce\f1\lang1033\par
+\f0\lang1042         \'bc\'bc\'b9\'f8\'c2\'b0 \'c0\'ce\'bc\'f6 : \'be\'f7\'b7\'ce\'b5\'e5\'b5\'c9 \'c6\'c4\'c0\'cf \'c5\'a9\'b1\'e2 (\f3\lang1033  size \f0\lang18\'b4\'c2\f3\lang1033  1024 * 1024 * 5  ==> 5MB\f0\lang1042  )\par
+        \'b3\'d7\'b9\'f8\'c2\'b0 \'c0\'ce\'bc\'f6 : \'c0\'ce\'c4\'da\'b5\'f9 \'b9\'ae\'c0\'da\f1\lang1033\par
+\f0\lang1042         \lang18\'b4\'d9\'bc\'b8\'c2\'b0\f3\lang1033  \f0\lang18\'c0\'ce\'bc\'f6\f3\lang1033  :\f0\lang18\'c6\'c4\'c0\'cf\f3\lang1033  \f0\lang18\'c1\'df\'ba\'b9\'c3\'b3\'b8\'ae\f3\lang1033  \par
+          \f0\lang18\'b5\'bf\'c0\'cf\'c7\'d1\f3\lang1033  \f0\lang18\'c0\'cc\'b8\'a7\'c0\'b8\'b7\'ce\f3\lang1033  \f0\lang18\'c6\'c4\'c0\'cf\'c0\'cc\f3\lang1033  \f0\lang18\'be\'f7\'b7\'ce\'b5\'e5\'b5\'c7\'b8\'e9\f3\lang1033  \f0\lang18\'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce\f3\lang1033  \f0\lang18 rename\f3\lang1033  \f0\lang18\'c7\'d8\'c1\'d6\'b4\'c2\f3\lang1033  \f0\lang18\'b1\'e2\'b4\'c9\f1\lang1033\par
+
+\pard\nowidctlpar\f3  \par
+
+\pard\nowidctlpar\sl276\slmult1\f0\lang1042 3\f3\lang1033 . MultipartRequest \f0\lang18\'c5\'ac\'b7\'a1\'bd\'ba\'c0\'c7\f3\lang1033  \f0\lang18\'bb\'fd\'bc\'ba\'c0\'da\'b0\'a1\f3\lang1033  \f0\lang18\'be\'f7\'b7\'ce\'b5\'e5\'b5\'c8\f3\lang1033  \f0\lang18\'c6\'c4\'c0\'cf\'c0\'c7\f3\lang1033  \f0\lang18\'c0\'fa\'c0\'e5\f3\lang1033  \f0\lang18\'c0\'db\'be\'f7\'b1\'ee\'c1\'f6\f3\lang1033  \f0\lang18\'bc\'f6\'c7\'e0\'c7\'d1\'b4\'d9\f1\lang1033\par
+
+\pard\nowidctlpar\f0\fs20\lang1042\par
+
+\pard\nowidctlpar\sl276\slmult1\fs22 4. \f3\lang1033 MultipartRequest \f0\lang18\'b8\'de\'bc\'ad\'b5\'e5\f1\lang1033\par
+
+\pard\nowidctlpar\f0\fs20\lang1042\par
+
+\pard\nowidctlpar\sl276\slmult1\fs22\lang18 1) String  getContentType(String name) => \'c0\'fc\'bc\'db\'b5\'c8 \'c6\'c4\'c0\'cf\'c0\'c7 contentType \'b3\'bb\'bf\'eb \'be\'cb\'be\'c6 \'ba\'b8\'b1\'e2 \par
+2) File getFile(String name) => \cf3 input \'c7\'d7\'b8\'f1\'c0\'cc\'b8\'a7\cf0\'bf\'a1 \'c7\'d8\'b4\'e7\'c7\'cf\'b4\'c2 \'c6\'c4\'c0\'cf \'c1\'a4\'ba\'b8\'b8\'a6  File \'c7\'fc\'c0\'b8\'b7\'ce \'b8\'ae\'c5\'cf\'c7\'d1\'b4\'d9 \par
+3) String \cf3 getFilesystemName\cf0 (String name) :  \'be\'f7\'b7\'ce\'b5\'e5\'b5\'c8 \cf3\'bd\'c7\'c1\'a6 \'c6\'c4\'c0\'cf \'c0\'cc\'b8\'a7 \cf0\'be\'cb\'be\'c6\'b3\'bb\'b1\'e2 \par
+\par
+4) String \cf3 getOriginalFileName\cf0 (String name) : \'be\'f7\'b7\'ce\'b5\'e5\'b5\'c8 \cf3\'bf\'f8\'b7\'a1\'c0\'c7 \'c6\'c4\'c0\'cf \'c0\'cc\'b8\'a7\cf0\'c0\'bb \'b8\'ae\'c5\'cf \par
+\par
+5) Enumeration \cf3 getFileNames\cf0 () : \'c0\'fc\'bc\'db\'b5\'c8 \'c6\'c4\'c0\'cf\'c1\'a4\'ba\'b8\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'cd \'c3\'e2\'b7\'c2 \'c7\'d5\'b4\'cf\'b4\'d9 \par
+\par
+6) Enumeration \cf3 getParameterNames\cf0 () : form \'c0\'c7 \'c6\'c4\'b6\'f3\'b9\'cc\'c5\'cd \'b8\'f1\'b7\'cf\'c0\'bb \'b8\'f0\'b5\'ce \'b0\'a1\'c1\'ae\'bf\'c2\'b4\'d9 \par
+7) String \cf3 getParameter\cf0 ("name") => name \'bf\'a1 \'c7\'d8\'b4\'e7\'c7\'cf\'b4\'c2 \'b0\'aa\'c0\'bb \'b8\'ae\'c5\'cf\f1\lang1033\par
+\f3  \par
+
+\pard\nowidctlpar\f0\fs20\lang1042\'bd\'c7\'bd\'c0\par
+src/\cf4 upload.FileUploadBean.java\cf0\par
+\lang1033 WebContent/ch14_fileup/\cf6\f3\fs22 fileupload.html\par
+                     fileupload.jsp\cf0\f0\fs20\par
+\par
+-------FileUploadBean.java\par
+\par
+\cf7\f3\fs28 package\cf5\b0  upload;\cf0\par
+\cf7\b import\cf5\b0  \ul java.io\ulnone .*;\cf0\par
+\cf7\b import\cf5\b0  javax.servlet.http.*;\cf0\par
+\cf7\b import\cf5\b0  com.oreilly.servlet.*;\cf0\par
+\cf7\b import\cf5\b0  \ul com.oreilly.servlet.multipart\ulnone .*;\cf0\par
+\par
+\cf7\b public\cf5\b0  \cf7\b class\cf5\b0  FileUploadBean \{\cf0\par
+\cf5\tab   \cf7\b public\cf5\b0  String upload(HttpServletRequest \cf8 request\cf5 )\cf0\par
+\cf5\tab   \{\cf0\par
+\cf5\tab     String \cf8 reply\cf5 =\cf9 ""\cf5 ;\cf0\par
+\cf5\tab     \cf7\b try\cf5\b0\{\cf0\par
+\cf5\tab       MultipartRequest \cf8\ul multi\cf5\ulnone =\cf7\b new\cf5\b0  MultipartRequest(\cf8 request\cf5 ,\cf9 "c:{{\field{\*\fldinst{HYPERLINK "\\\\\\\\_java\\\\\\\\aa\\\\\\\\"}}{\fldrslt{\\\\_java\\\\aa\\\\\ul0\cf0}}}}\f3\fs28 "\cf5 );\cf0\par
+\cf5\tab  \tab       \cf8\lang1042 reply\cf5 =\cf9 "\f0\'c6\'c4\'c0\'cf\f3  \f0\'be\'f7\'b7\'ce\'b5\'e5\f3  \f0\'bc\'ba\'b0\'f8\f3 "\cf5 ;\cf0\par
+\cf5\tab       \cf0\par
+\cf5\tab     \}\cf7\b catch\cf5\b0 (Exception \cf8 ex\cf5 )\{\cf0\par
+\cf5\tab       \cf8 reply\cf5 =\cf9 "\f0\'c6\'c4\'c0\'cf\f3  \f0\'be\'f7\'b7\'ce\'b5\'e5\f3  \f0\'bd\'c7\'c6\'d0\f3 :"\cf5 +\cf8 ex\cf5 ;\cf0\par
+\cf5\tab     \}\cf0\par
+\cf5\tab     \cf0\par
+\cf5\tab     \cf7\b return\cf5\b0  \cf8 reply\cf5 ;\cf0\par
+\cf5\tab   \}\cf10 //upload\cf0\par
+\par
+\cf5\}\cf10 //class end\cf0\par
+\b\f0\fs20\par
+------fileupload.html\par
+\cf11\b0\f3\fs28 <!\cf12 DOCTYPE\cf0  \cf11 html>\cf0\par
+\cf11 <\cf12 html\cf11 >\cf0\par
+\cf11 <\cf12 head\cf11 >\cf0\par
+\cf11 <\cf12 meta\cf0  \cf13 charset\cf5 =\cf9\i "UTF-8"\cf11\i0 >\cf0\par
+\cf11\lang1033 <\cf12 title\cf11 >\cf5 fileupload.html\cf11 </\cf12 title\cf11 >\cf0\par
+\cf11 </\cf12 head\cf11 >\cf0\par
+\cf11 <\cf12 body\cf0  \cf13 bgcolor\cf5 =\cf9\i "margenta"\cf11\i0 >\cf0\par
+\cf11\ul <\cf12 center\cf11 ><\cf12 h2\cf11 >\cf5\f0\lang1042\'c6\'c4\'c0\'cf\f3\lang1033  \f0\lang1042\'be\'f7\'b7\'ce\'b5\'e5\cf11\f3\lang1033 </\cf12 h2\cf11 ></\cf12 center\cf11 >\cf0\ulnone\par
+\par
+\cf11 <\cf12 form\cf0  \cf13 method\cf5 =\cf9\i "post"\cf0\i0  \cf13 action\cf5 =\cf9\i "fileupload.jsp"\cf0\i0  \cf13 encType\cf5 =\cf9\i "multipart/form-data"\cf11\i0 >\cf0\par
+\cf5\tab\tab\tab\tab\tab\tab\tab\tab\tab  \cf6 <!-- encType : encodeType, \f0\lang1042\'c6\'c4\'c0\'cf\'be\'f7\'b7\'ce\'b5\'e5\'c7\'d2\'b6\'a7\f3\lang1033  \f0\lang1042\'bb\'e7\'bf\'eb\f3\lang1033  -->\cf0\par
+\cf5  \tab\tab\tab\tab\tab\tab\tab\tab\tab  \cf0\par
+\cf5\tab\cf11\lang1042 <\cf12 table\cf0  \cf13 border\cf5 =\cf9\i "1"\cf11\i0 >\cf0\par
+\cf5\tab   \cf11 <\cf12 tr\cf11 >\cf0\par
+\cf5\tab\tab\tab\cf11 <\cf12 td\cf11 >\cf5 "\f0\'c3\'a3\'be\'c6\'ba\'b8\'b1\'e2\f3 " \f0\'b9\'f6\'c6\'b0\'c0\'bb\f3  \f0\'b4\'ad\'b7\'af\f3  \f0\'c0\'da\'bd\'c5\'c0\'c7\f3  \f0\'c4\'c4\'c7\'bb\'c5\'cd\'bf\'a1\f3  \f0\'c0\'d6\'b4\'c2\f3  \f0\'c6\'c4\'c0\'cf\'c0\'bb\f3  \f0\'bc\'b1\'c5\'c3\'c7\'cf\'b0\'ed\cf11\f3 <\cf12 br\cf11 >\cf0\par
+\cf5\tab\tab\tab\tab "\f0\'c6\'c4\'c0\'cf\f3  \f0\'be\'f7\'b7\'ce\'b5\'e5\f3 " \f0\'b9\'f6\'c6\'b0\'c0\'bb\f3  \f0\'b4\'a9\'b8\'a3\'b8\'e9\f3  \f0\'b5\'cb\'b4\'cf\'b4\'d9\cf0\f3\par
+\cf5\tab\tab\tab\cf11\lang1033 </\cf12 td\cf11 >\cf0\par
+\cf5\tab   \cf11 </\cf12 tr\cf11 >\cf0\par
+\cf5\tab   \cf11 <\cf12 tr\cf11 >\cf0\par
+\cf5\tab\tab\cf11 <\cf12 td\cf11 ><\cf12 input\cf0  \cf13 type\cf5 =\cf9\i "file"\cf0\i0  \cf13 name\cf5 =\cf9\i "file1"\cf11\i0 >\cf0\par
+\cf5\tab\tab\cf11 </\cf12 td\cf11 >\cf0\par
+\cf5\tab  \cf11 </\cf12 tr\cf11 >\cf0\par
+\cf5\tab  \cf11 <\cf12 tr\cf11 >\cf0\par
+\cf5\tab  \cf11 <\cf12 td\cf11 ><\cf12 input\cf0  \cf13 type\cf5 =\cf9\i "submit"\cf0\i0  \cf13 value\cf5 =\cf9\i "\f0\lang1042\'bc\'ad\'b9\'f6\'b7\'ce\'c0\'fc\'bc\'db\f3\lang1033 "\cf11\i0 ></\cf12 td\cf11 >\cf0\par
+\cf5\tab   \cf11 </\cf12 tr\cf11 >\cf0\par
+\cf5\tab\cf11 </\cf12 table\cf11 >\cf0\par
+\cf11 </\cf12 form\cf11 >\cf0\par
+\par
+\cf11 </\cf12 body\cf11 >\cf0\par
+\cf11 </\cf12 html\cf11 >\cf0\b\f0\fs20\par
+\par
+---------- fileupload.jsp\par
+\par
+\cf14\b0\f3\fs28 <%@\cf0  \cf12 page\cf0  \cf13 language\cf5 =\cf9\i "java"\cf0\i0  \cf13 contentType\cf5 =\cf9\i "text/html; charset=UTF-8"\cf0\i0\par
+    \cf13 pageEncoding\cf5 =\cf9\i "UTF-8"\cf14\i0 %>\cf0\par
+\cf5  \cf0\par
+\cf5   \cf11 <\cf12 jsp:useBean\cf0  \cf13 id\cf5 =\cf9\i "bb"\cf0\i0  \cf13 class\cf5 =\cf9\i "upload.FileUploadBean"\cf0\i0  \cf13 scope\cf5 =\cf9\i "request"\cf11\i0 />\cf6 <%--\f0\lang1042\'b0\'b4\'c3\'bc\'bb\'fd\'bc\'ba\f3\lang1033  \f0\lang1042\'b1\'e2\'b4\'c9\'c0\'cc\'b4\'d9\f3\lang1033  --%>\cf0\par
+\cf5   \cf0\par
+\cf5   \cf14 <%=\cf5  bb.upload(request) \cf14 %>\cf0\par
+\cf5   \cf0\par
+\cf5   \cf6 <%--\cf0\par
+\cf6   c:\\_java\\\ul aa\ulnone\\  \f0\lang1042\'c6\'fa\'b4\'f5\f3\lang1033  \f0\lang1042\'b8\'b8\'b5\'e9\'b0\'ed\f3\lang1033  \cf0\par
+\cf6   \ul\lang1042 html\ulnone  \f0\'bd\'c7\'c7\'e0\'c7\'cf\'bf\'a9\f3  , \f0\'c6\'c4\'c0\'cf\f3  \f0\'be\'f7\'b7\'ce\'b5\'e5\'b8\'a6\f3  \f0\'c7\'d8\f3  \f0\'ba\'b8\'bd\'c3\'bf\'e4\f3  \cf0\par
+\cf6    --%>\cf0\par
+\cf5   \cf0\b\f0\fs20\par
+======================================================\par
+\'ba\'f3 \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'ba \'c6\'c4\'c0\'cf \'be\'f7\'b7\'ce\'b5\'e5\par
+\'c0\'cf\'b9\'dd\'b5\'a5\'c0\'cc\'c5\'cd\'b5\'b5 \'b9\'de\'b4\'c2 \'bf\'b9\'c1\'a6  \'a1\'da\'a1\'da\'a1\'da\'a1\'da\'a1\'da\'a1\'da\'a1\'da\'a1\'da\'a1\'da\'a1\'da\'a1\'da\'a1\'da\'a1\'da\'a1\'da\par
+\lang1033 ======================================================\par
+fileupload2.html\par
+fileupload2.jsp\par
+\par
+============fileupload2.html\par
+\par
+\cf11\b0\f3\fs28 <!\cf12 DOCTYPE\cf0  \cf11 html>\cf0\par
+\cf11 <\cf12 html\cf11 >\cf0\par
+\cf11 <\cf12 head\cf11 >\cf0\par
+\cf11 <\cf12 meta\cf0  \cf13 charset\cf5 =\cf9\i "UTF-8"\cf11\i0 >\cf0\par
+\cf11 <\cf12 title\cf11 >\cf5 fileupload2.\ul html\cf11\ulnone </\cf12 title\cf11 >\cf0\par
+\cf11 </\cf12 head\cf11 >\cf0\par
+\cf11 <\cf12 body\cf11 >\cf0\par
+\cf5   \cf11 <\cf12 form\cf0  \cf13 method\cf5 =\cf9\i "post"\cf0\i0  \cf13 action\cf5 =\cf9\i "fileUpload2.jsp"\cf0\i0  \cf13 enctype\cf5 =\cf9\i "multipart/form-data"\cf11\i0 >\cf0\par
+\cf5     \cf0\par
+\cf5\tab       \f0\lang1042\'c0\'cc\'b8\'a7\f3\lang1033  : \cf11 <\cf12 input\cf0  \cf13 type\cf5 =\cf9\i "text"\cf0\i0  \cf13 name\cf5 =\cf9\i "name"\cf11\i0 >\cf5  \cf11 <\cf12 br\cf11 >\cf0\par
+\cf5\tab       ID : \cf11 <\cf12 input\cf0  \cf13 type\cf5 =\cf9\i "text"\cf0\i0  \cf13 name\cf5 =\cf9\i "id"\cf11\i0 >\cf5  \cf11 <\cf12 br\cf11 >\cf0\par
+\cf5\tab       PWD : \cf11 <\cf12 input\cf0  \cf13 type\cf5 =\cf9\i "text"\cf0\i0  \cf13 name\cf5 =\cf9\i "pwd"\cf11\i0 >\cf5  \cf11 <\cf12 br\cf11 >\cf0\par
+\cf5\tab       \f0\lang1042\'c6\'c4\'c0\'cf\f3\lang1033  : \cf11 <\cf12 input\cf0  \cf13 type\cf5 =\cf9\i "file"\cf0\i0  \cf13 name\cf5 =\cf9\i "upfile"\cf11\i0 >\cf0\par
+\cf5\tab       \cf0\par
+\cf5\tab       \cf11 <\cf12 input\cf0  \cf13 type\cf5 =\cf9\i "submit"\cf0\i0  \cf13 value\cf5 =\cf9\i "\f0\lang1042\'bc\'ad\'b9\'f6\'b7\'ce\'c0\'fc\'bc\'db\f3\lang1033 "\cf11\i0 >\cf0\par
+\cf5     \cf11 </\cf12 form\cf11 >\cf0\par
+\par
+\cf11 </\cf12 body\cf11 >\cf0\par
+\cf11 </\cf12 html\cf11 >\par
+\f0 ========\cf0\b\fs20 fileupload2.jsp\par
+\cf11\b0\fs28\par
+\cf14\f3 <%@\cf0  \cf12 page\cf0  \cf13 language\cf5 =\cf9\i "java"\cf0\i0  \cf13 contentType\cf5 =\cf9\i "text/html; charset=UTF-8"\cf0\i0\par
+    \cf13 pageEncoding\cf5 =\cf9\i "UTF-8"\cf14\i0 %>\cf0\par
+\cf5     \cf0\par
+\cf14 <%@\cf0  \cf12 page\cf0  \cf13 import\cf5 =\cf9\i "com.oreilly.servlet.*"\cf14\i0 %>\cf0\par
+\cf14 <%@\cf0  \cf12 page\cf0  \cf13 import\cf5 =\cf9\i "com.oreilly.servlet.multipart.*"\cf14\i0 %>\cf0\par
+\cf14 <%@\cf0  \cf12 page\cf0  \cf13 import\cf5 =\cf9\i "java.util.*"\cf14\i0 %>\cf0\par
+\cf14 <%@\cf0  \cf12 page\cf0  \cf13 import\cf5 =\cf9\i "java.io.*"\cf14\i0 %>\cf0\par
+\cf6 <%-- fileUpload2.\ul jsp\ulnone  --%>\cf0\par
+\par
+\cf14 <%\cf0\par
+\cf5 request.setCharacterEncoding(\cf9 "UTF-8"\cf5 );\cf0\par
+\cf5  \cf0\par
+\cf5 String savePath=\cf9 "c:/_java/aa/"\cf5 ; \cf10 // \f0\lang1042\'c0\'fa\'c0\'e5\'c7\'d2\f3\lang1033  \f0\lang1042\'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\f3\lang1033  (\f0\lang1042\'c0\'fd\'b4\'eb\'b0\'e6\'b7\'ce\f3\lang1033 )\cf0\par
+\cf7\b int\cf5\b0  sizeLimit = 5 * 1024 * 1024 ; \cf10 // 5MB \f0\lang1042\'b1\'ee\'c1\'f6\f3\lang1033  \f0\lang1042\'c1\'a6\'c7\'d1\f3\lang1033  \f0\lang1042\'b3\'d1\'be\'ee\'bc\'ad\'b8\'e9\f3\lang1033  \f0\lang1042\'bf\'b9\'bf\'dc\'b9\'df\'bb\'fd\cf0\f3\lang1033\par
+\par
+\cf7\b try\cf5\b0\{\cf0\par
+\cf5\tab   MultipartRequest multi=\cf0\par
+\cf5\tab\tab\tab   \cf7\b new\cf5\b0  MultipartRequest(request, savePath, sizeLimit,\cf9 "utf-8"\cf5 , \cf7\b new\cf5\b0  DefaultFileRenamePolicy());\cf0\par
+\cf5\tab   \cf0\par
+\cf5\tab   \ul Enumeration\ulnone  formNames=multi.getFileNames();  \cf10 // \f0\lang1042\'c6\'fb\'be\'c8\'c0\'c7\f3\lang1033  \f0\lang1042\'c0\'fc\'bc\'db\'b5\'c8\f3\lang1033  \f0\lang1042\'c6\'c4\'c0\'cf\f3\lang1033  \f0\lang1042\'c1\'a4\'ba\'b8\'b8\'a6\f3\lang1033  \f0\lang1042\'b0\'a1\'c1\'ae\'bf\'c2\'b4\'d9\cf0\f3\lang1033\par
+\cf5\tab   String formName=(String)formNames.nextElement(); \cf10 // \f0\lang1042\'c0\'da\'b7\'e1\'b0\'a1\f3\lang1033  \f0\lang1042\'b8\'b9\'c0\'bb\f3\lang1033  \f0\lang1042\'b0\'e6\'bf\'ec\'bf\'a3\f3\lang1033  while \f0\lang1042\'b9\'ae\'c0\'bb\f3\lang1033  \f0\lang1042\'bb\'e7\'bf\'eb\cf0\f3\lang1033\par
+\cf5\tab   String fileName=multi.getFilesystemName(formName); \cf10 //\f0\lang1042\'bc\'ad\'b9\'f6\'bf\'a1\f3\lang1033  \f0\lang1042\'c0\'fa\'c0\'e5\'b5\'c8\f3\lang1033  \f0\lang1042\'c6\'c4\'c0\'cf\f3\lang1033  \f0\lang1042\'c0\'cc\'b8\'a7\'b8\'a6\f3\lang1033  \f0\lang1042\'b8\'ae\'c5\'cf\f3\lang1033  ( \f0\lang1042\'c6\'c4\'c0\'cf\'c0\'c7\f3\lang1033  \f0\lang1042\'c0\'cc\'b8\'a7\f3\lang1033  \f0\lang1042\'be\'f2\'b1\'e2\f3\lang1033 )\cf0\par
+\par
+\cf5\tab   \cf7\b\lang1042 if\cf5\b0 (fileName == \cf7\b null\cf5\b0 ) \{   \cf10 // \f0\'c6\'c4\'c0\'cf\'c0\'cc\f3  \f0\'be\'f7\'b7\'ce\'b5\'e5\f3  \f0\'b5\'c7\'c1\'f6\f3  \f0\'be\'ca\'be\'d2\'c0\'bb\'b6\'a7\cf0\f3\par
+\cf5\tab\tab     out.print(\cf9 "\f0\'c6\'c4\'c0\'cf\f3  \f0\'be\'f7\'b7\'ce\'b5\'e5\f3  \f0\'b5\'c7\'c1\'f6\f3  \f0\'be\'ca\'be\'d2\'c0\'bd\f3 "\cf5 );\cf0\par
+\cf5\tab\tab     \cf0\par
+\cf5       \} \cf7\b else\cf5\b0  \{  \cf10 // \f0\'c6\'c4\'c0\'cf\'c0\'cc\f3  \f0\'be\'f7\'b7\'ce\'b5\'e5\f3  \f0\'b5\'c7\'be\'fa\'c0\'bb\'b6\'a7\cf0\f3\par
+\cf5\tab\tab   \cf0\par
+\cf5     \tab     \cf10 // \f0\'ba\'ea\'b6\'f3\'bf\'ec\'c1\'ae\'bf\'a1\f3  \f0\'c3\'e2\'b7\'c2\cf0\f3\par
+\cf5     \tab     out.print(\cf9 "Name : "\cf5  + multi.getParameter(\cf9 "name"\cf5 ) + \cf9 "<BR>"\cf5 );\cf10 //\f0\'a1\'da\'a1\'da\'a1\'da\cf0\f3\par
+\cf5     \tab     out.print(\cf9 "ID : "\cf5  + multi.getParameter(\cf9 "id"\cf5 ) + \cf9 "<BR>"\cf5 );\cf10 //\f0\'a1\'da\'a1\'da\'a1\'da\cf0\f3\par
+\cf5     \tab     out.print(\cf9 "pwd : "\cf5  + multi.getParameter(\cf9 "pwd"\cf5 ) + \cf9 "<BR>"\cf5 );\cf10 //\f0\'a1\'da\'a1\'da\'a1\'da\cf0\f3\par
+\cf5     \tab     \cf0\par
+\cf5     \tab     out.print(\cf9 "Form \f0\'be\'c8\'c0\'c7\f3   Name : "\cf5  + formName + \cf9 "<BR>"\cf5 );\cf10 //\f0\'ba\'b0\'c0\'c7\'b9\'cc\f3  \f0\'be\'f8\'c0\'bd\cf0\f3\par
+\cf5     \tab     out.print(\cf9 "File Name  : "\cf5  + fileName);\cf10 //\f0\'ba\'b0\'c0\'c7\'b9\'cc\f3  \f0\'be\'f8\'c0\'bd\cf0\f3\par
+\par
+\cf5     \tab     \cf10 //input \f0\'c5\'c2\'b1\'d7\'bc\'d3\'bc\'ba\'c0\'cc\f3  file\f0\'c0\'ce\f3  \f0\'b0\'cd\f3  \cf0\par
+\cf5     \tab     String fileName2=multi.getFilesystemName(\cf9 "upfile"\cf5 );\cf10 // \f0\'bc\'ad\'b9\'f6\'bf\'a1\f3  \f0\'c0\'fa\'c0\'e5\'b5\'c8\f3  \f0\'c6\'c4\'c0\'cf\f3  \f0\'c0\'cc\'b8\'a7\f3  \cf0\par
+\cf5     \tab     String original=multi.getOriginalFileName(\cf9 "upfile"\cf5 );\cf10 // \f0\'c0\'fc\'bc\'db\'b5\'c8\f3  \f0\'bf\'f8\'b7\'a1\f3  \f0\'c6\'c4\'c0\'cf\f3  \f0\'c0\'cc\'b8\'a7\f3  \cf0\par
+\cf5     \tab     File file=multi.getFile(\cf9 "upfile"\cf5 );\cf10 // input  \f0\'c7\'d7\'b8\'f1\'c0\'cc\'b8\'a7\'bf\'a1\f3  \f0\'c7\'d8\'b4\'e7\'c7\'cf\'b4\'c2\f3  \f0\'c6\'c4\'c0\'cf\f3  \f0\'c1\'a4\'ba\'b8\'b8\'a6\f3  File \f0\'c7\'fc\'c0\'b8\'b7\'ce\f3  \f0\'b8\'ae\'c5\'cf\'c7\'d5\'b4\'cf\'b4\'d9\f3  \cf0\par
+\par
+\cf5     \tab     String type=multi.getContentType(\cf9 "upfile"\cf5 ); \cf10 // \f0\'c0\'fc\'bc\'db\'b5\'c8\f3  file \f0\'c0\'c7\f3  contentType \cf0\par
+\cf5     \tab     \cf0\par
+\cf5     \tab     out.print(\cf9 "<br><br>\f0\'bd\'c7\'c1\'a6\f3  \f0\'c6\'c4\'c0\'cf\f3  \f0\'c0\'cc\'b8\'a7\f3  :"\cf5 +original+\cf9 "<br>"\cf5 );\cf0\par
+\cf5     \tab     out.print(\cf9 "\f0\'c0\'fa\'c0\'e5\'b5\'c8\f3  \f0\'c6\'c4\'c0\'cf\f3  \f0\'c0\'cc\'b8\'a7\f3  :"\cf5 +fileName2+\cf9 "<br>"\cf5 );\cf0\par
+\cf5     \tab     out.print(\cf9 "\f0\'c6\'c4\'c0\'cf\f3  \f0\'c5\'b8\'c0\'d4\f3  :"\cf5 +type+\cf9 "<br>"\cf5 );\cf0\par
+\par
+\cf5     \tab     \cf7\b if\cf5\b0 (file != \cf7\b null\cf5\b0 )\{\cf0\par
+\cf5     \tab       out.print(\cf9 "\f0\'c6\'c4\'c0\'cf\f3  size :"\cf5 +file.length()+\cf9 "<br>"\cf5 );\cf0\par
+\cf5     \tab     \}\cf0\par
+\par
+\cf5       \}\cf10 //else\cf0\par
+\cf5\}\cf7\b catch\cf5\b0 (Exception ex)\{out.print(\cf9 "\f0\'bf\'b9\'bf\'dc\f3  \f0\'bb\'f3\'c8\'b2\f3  \f0\'b9\'df\'bb\'fd\f3 ..! "\cf5 +ex);\} \cf0\par
+\cf5  \cf0\par
+\cf14 %>\cf0\par
+\b\f0\fs20\par
+\par
+\par
+\par
+\f1\lang1033\par
+\par
+\par
+\b0\f2\lang18\par
+}
+ 

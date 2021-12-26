@@ -1,0 +1,57 @@
+01_문서.txt
+
+■ include 디렉티브
+  => 외부 데이터(파일)를 jsp에 포함하는 것(.txt파일, .html파일, .jsp파일) <--등이 포함될 수 있다
+  => 단순히 소스를 포함 한다
+  => 포함될 문서는 헤더부분을 넣지 마세요 // <--html...body... 요 부분(↓)을 말하는 거
+     <html>
+       <body>
+       </body>
+     </html>
+□ include 디렉티브 형식
+<%@ include file="파일이름"%>
+
+예시 :
+<%@ include file="aa.html"%>
+<%@ include file="aa.txt"%>
+<%@ include file="aa.jsp"%>
+
+◆실습
+ch04_include
+  ex01 폴더 만들고
+    name.txt
+    email.txt
+    copyright.jsp
+    includeTest.jsp
+    
+  ex02 폴더 만들고
+    top.jsp
+    bottom.jsp
+    index2.jsp
+
+
+■ include 액션 : forward액션 태그와 형식은 같다
+  but,
+=> include 액션은 제어권이 넘어갔다가 처리하고 처리 결과가 포함된다
+    ※ forward_include_action.jpeg 참조
+  
+□ include 액션
+형식1
+<jsp:include page="로컬url"/>
+
+형식2
+<jsp:include page="로컬url">
+  <jsp:param name="" value=""/>
+  <jsp:param name="" value=""/>
+</jsp:include>
+
+◆실습
+ex03_action 폴더
+  01_includeTag.html
+  01_includeTag.jsp
+  01_includeTagTop.jsp
+  
+ex04_action 폴더
+  01_includeTag.html
+  01_includeTag.jsp
+  01_includeTagTop.jsp

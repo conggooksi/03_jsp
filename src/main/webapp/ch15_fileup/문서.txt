@@ -1,0 +1,25 @@
+자바빈을 이용한 파일 업로드 / 메일 보내기
+
+파일업로드, 메일 보내기를 하려면
+cos.jar 다운받기
+http://www.servlets.com
+
+아래 오른쪽
+  Download the package 클릭
+
+아래쪽
+  cos_20.08.zip 파일 다운 받아 / 압축풀고
+  
+c:\cos-20.08\ 복사를 하고
+
+c:\cos-20.08\lib\cos.jar를
+jdk/jre/lib/ext/ 복사
+tomcat/lib/복사
+
+환경변수
+classpath=.;~~~~; c:\cos=20.08\lib\cos.jar; 추가
+
+Tomcat/lib/el_api.jar
+Tomcat/lib/jsp_api.jar
+Tomcat/lib/servlet_api.jar 들을
+jdk/jre/lib/ext/ 복사

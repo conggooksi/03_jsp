@@ -1,0 +1,25 @@
+메일 보내기
+
+cos.jar 사용
+
+MailMessage 클래스 사용
+
+1. 생성자
+   MailMessage(host)
+   MailMessage(smtp.nate.com);//smtp.nate.com 메일 무료 서비스
+
+2. 메서드들
+  from(STring from) : 보내는 사람(naver, daum,,,,)s
+  to(String to) : 받는 사람 메일 주소 (pparkmj777@nate.com)
+
+  setSubject(String subject) : 편지 제목
+  getPrintStream() : MailMessage에서 출력용 스트림을 생성한다
+  sendAndClose() : 출력용 스트림의 내용을 보내고 종료
+
+실습
+src/mail.MailSender.java 빈 사용
+
+WebContent
+  ch17_mail
+    MailSend.html
+    MailSend.jsp

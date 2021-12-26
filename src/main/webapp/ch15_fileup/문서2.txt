@@ -1,0 +1,64 @@
+문서2.txt
+반드시 이클립스 재구동
+
+--------
+파일 업로드
+--------
+1. MultipartRequest 클라스 사용
+
+2. 생성자
+  MultipartRequest(request, dir(savepath))
+                             c:\_aa\upload  파일 업로드될 위치
+2. 생성자
+  MultipartRequest(request, dir(savepath),size,"utf-8",new DefaultFileRenamePolicy())
+  1) request 인수               : 요청 객체
+  2) dir(savepath) 인수 : 업로드 될 위치
+  3) size 인수                      : 업로드할 파일 크기
+  4) "utf-8" 인수               : 파일 이름이 한글일 때 인코딩 처리
+  5) new DefaultFileRenamePolicy() : 같은 이름으로 업로드가 될 때, 이름 변경 한다
+   
+3. 객체생성하면 파일 업로드가 된다
+  MultipartRequest 클래스의 생성자가 업로드된 파일의 저장 작업까지 수행한다
+   
+4. MultipartRequest 메서드들
+  1) String getContentType(String name)
+      전송된 파일의 contentType 내용 알아 보기
+        
+  2) File getFile(String name)
+   input항목 이름에 해당하는 파일 정보를 File형으로 리턴한다
+    
+  3) String getFilesystemName(String name)
+       업로드된 실제 파일 이름 알아내기
+          
+  4) String getOriginalFileName(String name)
+       업로드된 원래 파일 이름 알아내기
+  
+  5) Enumeration getFileNames()
+       전송된 파일 정보를 가져와서 출력한다
+  
+  6) Enumeration getParameterNames()
+   form의 파라미터 이름들을 모두 가져온다
+  
+  7) String getParameter()
+    form안의 name에 해당하는 값을 리턴
+    
+==============
+파일 업로드 실습
+--------------
+src/upload.FileUploadBean.java
+
+WebContent/ch15_fileup
+  fileupload.html 입력화면
+  fileupload.jsp  처리(빈의 메서드 호출)
+
+
+
+
+
+
+
+  
+  
+  
+  
+  

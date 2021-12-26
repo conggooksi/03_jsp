@@ -1,0 +1,32 @@
+01_문서.txt
+
+내장 객체(객체생성 대신 내장 객체 사용 합니다)
+객체 : 클래스 변수= 소문자
+
+1. out
+2. request
+3. response / 04_response.txt
+
+--------------------------------------
+4. application / 05_application.txt
+	프로젝트=웹어플리케이션=컨텍스트
+	   WEB-INF
+	     classes / *.class
+	     lib     / *.jar
+	     web.xml / 웹 어플리케이션 환경 설정 하는 곳
+--------------------------------------
+
+5. pageContext / 06_pageContext.jsp
+6. config / 07_config.jsp
+7. page / 08_page.jsp
+8. exception //09_err.jsp
+			//09_exception.jsp
+
+9. session
+
+forward액션 / WebContent / ch03_forward 폴더
+include액션
+template = 동적 Layout / 3개
+
+cookie
+session

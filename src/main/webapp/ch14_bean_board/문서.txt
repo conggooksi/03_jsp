@@ -1,0 +1,20 @@
+DB작업
+
+use mydb2;
+
+create table board2(
+num int(4) not null auto_increment primary key,
+name varchar(30) not null,
+title varchar(40) not null,
+content text not null,
+regdate date
+);
+
+src/board2.BoardDTO.java 모델빈
+src/board2.BoardDAO.java 비즈니스 로직
+
+Web Content
+  ch14_bean_board
+    boardForm.jsp 글쓰기 폼
+    boardPro.jsp insert하기, dao 메서드 호출
+    boardList.jsp

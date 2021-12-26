@@ -1,0 +1,26 @@
+실습1:모델1 방식으로 게시판 실습
+WebContent
+  ch10_model1 폴더
+  
+  DB작업
+  MySQL 사용
+  
+  create database mydb2;
+  use mydb2;
+  
+  create table board(
+  num int(4) not null auto_increment primary key,/*일련번호*/
+  writer varchar(30) not null,/*글쓴이*/
+  subject varchar(40) not null,/*글제목*/
+  content text not null,/*글내용*/
+  wdate date,/*날짜  NOW()*/
+  ip varchar(20)/*ip*/
+  );
+  
+  auto_increment : 글번호 자동 증가하는 기능
+  
+  ch10_model1
+    boardForm.jsp
+    boardPro.jsp
+    boardList.jsp
+    

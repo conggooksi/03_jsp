@@ -1,0 +1,58 @@
+01_forward_문서.txt
+forward액션은
+JSP컨테이너 내에서 제어권이 넘어간다
+로컬URL은 이동되지만 외부 URL은 안된다
+
+
+forward액션은
+<jsp:forward page="로컬url"/> ...이동 된다 // <-- page는 jsp의 페이지를 의미한다
+<jsp:forward page="외부url"/> ...이동 안된다, 에러
+
+response.sendRedirect("외부url") ...이동 된다
+response.sendRedirect("로컬url") ...이동 된다
+게시판에서 많이 사용할 것임
+
+ch02_object\04_response.txt 참조
+
+<jsp:forward page="">액션은
+---------------------------------
+aa.html ---> aa.jsp -- forward ----> bb.jsp
+데이터                    데이터 사용                              aa.html에서 보낸 데이터 사용
+---------------------------------
+
+response.sendRedirect("url")은    
+---------------------------------
+aa.html ---> aa.jsp ---response.sendRedirect()--> bb.jsp
+데이터                    데이터 사용        							  데이터 사용 못함
+---------------------------------
+
+■ forward 액션
+형식 1
+  <jsp:forward page="로컬url"/>
+  
+형식 2
+  <jsp:forward page="로컬url">
+    <jsp:param name="id" value="kim"/>
+    <jsp:param name="pw" value="k123"/>
+    <jsp:param name="name" value="김길동"/>
+  </jsp:forward>
+  
+ch03_forward 폴더
+	01_forward
+		forward01.jsp
+		forward02.jsp
+		forward03.jsp
+	02_forward 폴더
+		age.html  실행
+		age.jsp ==> aa.jsp 0~10살
+				==> bb.jsp 11~20살
+				==> cc.jsp 21~65살
+				==> dd.jsp 66살 이상
+	03_forward 폴더
+		bloodType.html 실행=서버에 요청
+		bloodType.jsp
+		A.jsp
+		B.jsp
+		AB.jsp
+		O.jsp
+		

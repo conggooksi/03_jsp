@@ -1,0 +1,18 @@
+model1 방식 게시판 작성
+
+DB작업
+
+use mydb2;
+
+create table board2(
+num int(4) not null auto_increment primary key,
+name varchar(30) not null,
+title varchar(40) not null,
+content text not null,
+regdate date
+);
+
+
+boardForm.jsp
+boardPro.jsp
+boardList.jsp

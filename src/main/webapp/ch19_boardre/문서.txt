@@ -1,0 +1,52 @@
+■ 빈 사용 답글 게시판
+
+c:\MySQL5.5\bin>mysql -u root -p
+
+show databases;
+
+create database mydb5;
+
+use mydb5;
+
+■ 테이블 만들기
+drop table board;
+
+create table board(
+num int(4) auto_increment primary key,
+name varchar(30) not null,
+subject varchar(50) not null,
+content text not null,
+pos int(11),/*글순서,<--답글을 써야 되기 때문에 글 순서가 들어간다*/
+depth int(5),/*답글 깊이, 들여쓰기*/
+regdate date,/*NOW()*/
+ip varchar(20),
+pw varchar(20),
+count int(5) default 0 /*누적 step 0초기화  조회수*/
+);
+
+======================================================
+■ 게시판 만들기(진짜 제대로 간다잉)
+
+src/boardre.BoardDTO.java 모델빈
+src/boardre.BoardDAO.java 비즈니스로직(DB처리 구문들이 들어감)
+
+ch19_boardre
+  writeForm.jsp
+  wirtePro.jsp -- dao메서드 호출
+  
+  list.jsp -- 리스트 -- dao메서드 호출
+  
+  content.jsp -- 글 내용 보기 -- dao메서드 호출
+  
+  updateForm.jsp -- 글 수정 폼
+  updatePro.jsp -- 글 수정 -- dao메서드 호출
+  
+  delete.jsp -- 글 삭제 폼
+  
+  replyForm.jsp -- 답글 쓰기 폼
+  replyPro.jsp -- 답글 쓰기 -- dao메서드 호출
+  
+  Q&A
+  FaQ = 자주 묻는 질문
+    공지사항
+    후기쓰기

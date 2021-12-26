@@ -1,0 +1,11 @@
+파일 업로드,메일 보내기
+
+WebContent
+  ch18_mail_upload 폴더
+  
+  src/mailupload.MailUpload.java
+  
+  WebContent
+    ch18_mail_upload
+      mailUpload.html
+      mailUpload.jsp

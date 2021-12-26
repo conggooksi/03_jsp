@@ -1,0 +1,16 @@
+java awt Layout
+
+template : 동적 Layout
+
+tiles : 스프링
+
+WebContent / ch05_template 폴더
+
+ch05_template
+  top.jsp
+  bottom.jsp
+  left.jsp
+  content.jsp
+  
+  template.jsp
+  main.jsp <=== 실행

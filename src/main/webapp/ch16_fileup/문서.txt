@@ -1,0 +1,8 @@
+자바빈을 사용하지 않고 JSP로만 할 것이다
+
+파일 업로드와 일반 데이터 처리도 할 것이다
+
+ch16_fileup
+  fileupload.html
+  fileupload.jsp
+  

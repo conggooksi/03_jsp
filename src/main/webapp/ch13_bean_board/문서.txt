@@ -1,0 +1,27 @@
+DTO 모델빈
+DAO 비즈니스 로직(DB작업)
+
+
+  create database mydb2;
+  use mydb2;
+  
+  create table board(
+  num int(4) not null auto_increment primary key,/*일련번호*/
+  writer varchar(30) not null,/*글쓴이*/
+  subject varchar(40) not null,/*글제목*/
+  content text not null,/*글내용*/
+  wdate date,/*날짜  NOW()*/
+  ip varchar(20)/*ip*/
+  );
+  
+WebContent
+  ch13_bean_board 폴더
+  
+src/board/BoardDTO.java  모델빈 <--데이터를 클라이언트 서버로 보낼 때 묶어서 한번에 보냄
+    board.BoardDTO
+src/board/BoardDAO.java  비즈니스 로직, DB작업
+
+ch13_bean_board
+  boardForm.jsp
+  boardPro.jsp
+  boardList.jsp

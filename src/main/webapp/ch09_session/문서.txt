@@ -1,0 +1,17 @@
+쿠키는 클라이언트에 정보를 심는것
+like 쿠폰
+
+session : 서버가 정보를 관리하는 것이다. 로그인한 경우만
+
+실습
+ch09_session
+  ex01
+01_Session.html
+01_Session.jsp --- 세션등록
+01_Session_2.jsp --- 등록된 id를 얻어서 출력
+
+실습
+  ex02
+menu.jsp
+remove.jsp
+cart.jsp

@@ -1,0 +1,9 @@
+네비게이션 창에서 >> 우클릭 >> new >> project...
+
+WEb >> Dynamic Web Project
+
+새프로젝트 이름 : 03_jsp
+
+next >> next
+
+web.xml 체크 >> finish
